@@ -3,9 +3,60 @@ html {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.media_container {
+  width: 60%;
+}
+
+.shade {
+
+}
+
+.light {
+
+}
 /* Header */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+header img {
+  height: 2rem;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 1rem;
+}
 /* Start Here Section */
+.start_here {
+  margin-top: 4rem;
+}
+.banner {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+}
 /* Features Section */
+
 /* Start Learning Section */
 /* Thesis Section */
 /* Footer */
