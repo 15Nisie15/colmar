@@ -3,6 +3,10 @@ html {
   font-size: 16px;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,6 +24,7 @@ section {
 
 .media_container {
   width: 60%;
+  height: 40%;
 }
 
 .shade {
@@ -34,6 +39,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
+  background-color: ;
 }
 
 header .content {
@@ -41,6 +47,11 @@ header .content {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
 }
 
 header img {
@@ -53,14 +64,34 @@ nav li {
 }
 /* Start Here Section */
 .start_here {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
-.banner {
+
+.banner_text {
+
+}
+
+.banner_text h1, h2 {
+  padding-bottom: 1.5rem;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+#banner {
   background-image: url("../images/banner.jpg");
-  background-size: cover;
+  max-height: 40rem;
+
 }
 /* Features Section */
 
+#info_main {
+  background-image: url("../images/information-main.jpg");
+  max-height: 10rem;
+}
 /* Start Learning Section */
 /* Thesis Section */
 /* Footer */
