@@ -1,14 +1,22 @@
 /* Universal Styles */
 html {
   font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  color: #041E37;
 }
 
 h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+h2 {
   font-size: 1.5rem;
 }
 
 a {
   text-decoration: none;
+  color: #041E37;
 }
 
 section {
@@ -19,27 +27,33 @@ section {
 
 .main_content {
   position: relative;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .media_container {
   width: 60%;
-  height: 40%;
+}
+
+.media_container img {
+  display: block;
+  max-height: 50rem;
+  width: 100%;
 }
 
 .shade {
-
+ background-color: #728CA6;
 }
 
 .light {
-
+background-color: white;
 }
+
 /* Header */
 header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: ;
+  background-color: white;
 }
 
 header .content {
@@ -62,13 +76,17 @@ nav li {
   display: inline-block;
   padding-left: 1rem;
 }
+
+.highlight {
+  color: #728CA6;
+}
 /* Start Here Section */
 .start_here {
   margin-top: 2rem;
 }
 
 .banner_text {
-
+  margin: 1.5rem;
 }
 
 .banner_text h1, h2 {
@@ -76,21 +94,27 @@ nav li {
 }
 
 .button {
+  display: block;
   background-color: black;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.button a {
   color: white;
-  padding: 0.5rem;
 }
 
-#banner {
+/*#banner {
   background-image: url("../images/banner.jpg");
-  max-height: 40rem;
-
-}
+  background-size: contain;
+}*/
 /* Features Section */
 
 #info_main {
   background-image: url("../images/information-main.jpg");
-  max-height: 10rem;
+  max-height: 20rem;
 }
 /* Start Learning Section */
 /* Thesis Section */
