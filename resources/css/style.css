@@ -36,7 +36,7 @@ section {
 
 .media_container img {
   display: block;
-  max-height: 50rem;
+  max-height: 35rem;
   width: 100%;
 }
 
@@ -95,7 +95,7 @@ nav li {
 
 .button {
   display: block;
-  background-color: black;
+  background-color: #041E37;
   margin-left: 0;
   margin-right: 0;
   padding: 0.5rem 0 0.5rem 0;
@@ -105,16 +105,17 @@ nav li {
 .button a {
   color: white;
 }
-
-/*#banner {
-  background-image: url("../images/banner.jpg");
-  background-size: contain;
-}*/
 /* Features Section */
+.supporting h2 {
+  padding-top: 2rem;
+}
 
-#info_main {
-  background-image: url("../images/information-main.jpg");
-  max-height: 20rem;
+.supporting p {
+  padding-top: 1.5rem;
+}
+
+.supporting img {
+  width: 60%;
 }
 /* Start Learning Section */
 /* Thesis Section */
