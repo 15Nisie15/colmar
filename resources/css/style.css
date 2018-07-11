@@ -25,6 +25,10 @@ section {
   align-items: center;
 }
 
+aside {
+  max-width: 40%;
+}
+
 .main_content {
   position: relative;
   padding-top: 2rem;
@@ -117,6 +121,71 @@ nav li {
 .supporting img {
   width: 60%;
 }
+
+.feature_container {
+  display: flex;
+}
+
+ .feature_container img {
+   width: 35%;
+   height: auto;
+ }
+
+ .feature_text h3 {
+   padding-bottom: 0.5rem;
+   font-size: 1.5rem;
+ }
+
+ .feature_text span {
+   padding-bottom: 0.5rem;
+   line-height: 1.5rem;
+ }
+
+ .feature_text a {
+   color: #4A6B8A;
+ }
 /* Start Learning Section */
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.course_card {
+
+}
+
+.course_listing {
+  background-color: white;
+}
+
+#software {
+  background-image: url("../images/course-software.jpg");
+  background-size: contain;
+}
+
+#computer_art{
+  background-image: url("../images/course-computer-art.jpg");
+  background-size: contain;
+}
+
+#design{
+  background-image: url("../images/course-design.jpg");
+  background-size: contain;
+}
+
+#data {
+  background-image: url("../images/course-data.jpg");
+  background-size: contain;
+}
+
+#business {
+  background-image: url("../images/course-business.jpg");
+  background-size: contain;
+}
+
+#marketing {
+  background-image: url("../images/course-marketing.jpg");
+  background-size: contain;
+}
 /* Thesis Section */
 /* Footer */
