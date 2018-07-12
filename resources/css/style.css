@@ -110,26 +110,39 @@ nav li {
   color: white;
 }
 /* Features Section */
+aside {
+  width: 40%;
+  border-left: 1px solid #728CA6;
+}
+
+.supporting {
+  width: 60%;
+}
+
 .supporting h2 {
   padding-top: 2rem;
 }
 
 .supporting p {
   padding-top: 1.5rem;
-}
-
-.supporting img {
-  width: 60%;
+  padding-bottom: 1.5rem;
 }
 
 .feature_container {
   display: flex;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #728CA6;
 }
 
  .feature_container img {
    width: 35%;
    height: auto;
  }
+ 
+ .feature_text {
+  padding-left: 1rem;
+}
 
  .feature_text h3 {
    padding-bottom: 0.5rem;
@@ -151,7 +164,9 @@ nav li {
 }
 
 .course_card {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .course_listing {
@@ -161,6 +176,8 @@ nav li {
 #software {
   background-image: url("../images/course-software.jpg");
   background-size: contain;
+  width: 20rem;
+  height: auto;
 }
 
 #computer_art{
@@ -189,3 +206,9 @@ nav li {
 }
 /* Thesis Section */
 /* Footer */
+footer {
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #728CA6;
+}
