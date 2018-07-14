@@ -170,27 +170,32 @@ aside {
   align-items: center;
 }
 
+.start_learning h2 {
+  padding-bottom: 2rem;
+}
+
 .courses {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .course_card {
-  flex: 1 1 15rem;
+  flex: 1 1 18rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  height: 25rem;
 }
 
 .course_card img {
-  max-width: 15rem;
-  max-height: auto;
+  max-width: 20rem;
 }
 
 .course_listing {
   background-color: white;
   padding: 1rem 1rem 1.5rem 1rem;
+  max-width: 18rem;
 }
 
 .course_listing h4 {
@@ -198,7 +203,7 @@ aside {
   padding-bottom: .5rem;
 }
 
-#software {
+/*#software {
   background-image: url("../images/course-software.jpg");
   background-size: contain;
   width: 20rem;
@@ -228,7 +233,7 @@ aside {
 #marketing {
   background-image: url("../images/course-marketing.jpg");
   background-size: contain;
-}
+} */
 /* Thesis Section */
 /* Footer */
 footer {
