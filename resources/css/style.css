@@ -302,7 +302,7 @@ nav li {
    .feature_text {
      width: 100%;
      padding-top: 1rem;
-     padding-bottom: 2rem;
+     padding-bottom: 3rem;
    }
  }
 
@@ -342,13 +342,17 @@ nav li {
   height: 10rem;
 }
 
+.course_listing a {
+  color: #041E37;
+}
+
 .course_listing h4 {
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
 
  @media only screen and (max-width: 515px) {
-   .start_learning section {
+   .start_learning {
      background-color: white;
    }
 
@@ -356,13 +360,13 @@ nav li {
      display: flex;
      flex-direction: column;
      padding: 1rem 0 0 0;
+     width: 100%;
    }
 
    .course_card {
      width: 100%;
      min-height: 4rem;
      max-height: 4rem;
-     background-color: #728CA6;
      padding: 0 0 0.5rem 0;
    }
 
@@ -370,7 +374,12 @@ nav li {
      display: none;
    }
 
-   .course_listing h4, p {
+   .course_listing {
+     background-color: #728CA6;
+
+   }
+
+   .details {
      display: none;
    }
  }
@@ -389,9 +398,9 @@ nav li {
     padding: 0;
   }
 
-  .supporting h2, p {
+/*  .supporting h2, p {
     display: none;
-  }
+  }*/
 }
 
 /* Footer */
