@@ -72,9 +72,13 @@ background-color: white;
 }
 
 @media only screen and (max-width: 515px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
   .info {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
 }
 
@@ -265,13 +269,13 @@ nav li {
  }
 
  @media only screen and (min-width: 515px) {
-   .mobile_img img{
+   .mobile_img {
      display: none;
    }
  }
 
  @media only screen and (max-width: 515px) {
-   .supporting {
+   .quote {
      display: none;
    }
 
@@ -359,7 +363,7 @@ nav li {
    .courses {
      display: flex;
      flex-direction: column;
-     padding: 1rem 0 0 0;
+     padding: 1rem;
      width: 100%;
    }
 
@@ -393,14 +397,15 @@ nav li {
     display: none;
   }
 
+  .supporting {
+    width: 100%;
+    padding: 1rem 0 0 0;
+  }
+
   .secondary {
     width: 100%;
     padding: 0;
   }
-
-/*  .supporting h2, p {
-    display: none;
-  }*/
 }
 
 /* Footer */
@@ -416,7 +421,12 @@ footer {
     display: none;
   }
 
+  footer {
+    padding-bottom: 1rem;
+  }
+
   .copyright {
     padding-top: 1.5rem;
+    font-size: 0.8rem;
   }
 }
