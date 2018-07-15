@@ -73,6 +73,7 @@ background-color: white;
 
 @media only screen and (max-width: 515px) {
   .info {
+    width: 100%;
     padding: 1rem;
   }
 }
@@ -194,10 +195,6 @@ nav li {
   }
 }
 /* Features Section */
-aside {
-  width: 40%;
-}
-
 .border {
   border-left: 1px solid #728CA6;
   border-bottom: 1px solid #728CA6;
@@ -263,13 +260,35 @@ aside {
    color: #4A6B8A;
  }
 
+ @media only screen and (min-width: 515px) {
+   .mobile_img img{
+     display: none;
+   }
+ }
+
  @media only screen and (max-width: 515px) {
    .supporting {
      display: none;
    }
 
+   .desktop_img {
+     display: none;
+   }
+
+   .secondary {
+     justify-content: center;
+   }
+
    aside {
-     width: 100%;
+     max-width: 100%;
+   }
+
+   .border {
+     border-style: none;
+   }
+
+   .feature_container {
+     flex-direction: column;
    }
 
    .feature_container img {
@@ -278,6 +297,7 @@ aside {
 
    .feature_text {
      width: 100%;
+     padding-top: 1rem;
      padding-bottom: 2rem;
    }
  }
@@ -324,14 +344,22 @@ aside {
 }
 
  @media only screen and (max-width: 515px) {
+   .start_learning section {
+     background-color: white;
+   }
+
    .courses {
      display: flex;
      flex-direction: column;
+     padding: 1rem 0 0 0;
    }
 
    .course_card {
      width: 100%;
+     min-height: 4rem;
+     max-height: 4rem;
      background-color: #728CA6;
+     padding: 0 0 0.5rem 0;
    }
 
    .course_card img {
@@ -346,8 +374,9 @@ aside {
 .supporting video {
   width: 100%;
 }
+
 @media only screen and (max-width: 515px) {
-  .thesis aside {
+  .thesis .feature_container {
     display: none;
   }
 
