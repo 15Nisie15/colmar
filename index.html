@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width">
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
@@ -12,20 +13,28 @@
 
   <!-- Header -->
   <header>
-    <div class="content">
+    <div class="content desktop">
       <div class="logo">
         <img src="./resources/images/ic-logo.svg" alt="Logo" />
         <span>COLMAR<span class="highlight">ACADEMY</span></span>
       </div>
-      <nav>
+      <nav class="desktop">
         <ul>
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
           <li><a href="#">Sign in</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+
+      <nav class="mobile">
+        <ul>
+          <li><a href="#"><img src="./resources/images/ic-logo.svg" /></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg" /></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg" /></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg" /></a></li>
+        </ul>
+      </nav>
   </header>
 
   <!-- Main Content -->
@@ -92,7 +101,7 @@
 
     <section class="shade">
       <div class="info">
-        <h2>Start Learning</h2>
+        <h1>Start Learning</h1>
         <div class="courses">
           <div class="course_card">
           <img src="./resources/images/course-software.jpg" alt="Computer" />
@@ -155,7 +164,7 @@
     <!-- Thesis Exhibit Section -->
     <section class="light">
       <div class="info">
-        <h2>Thesis Exhibit</h2>
+        <h1>Thesis Exhibit</h1>
         <div class="secondary">
           <div class="supporting">
             <video width="100%" height="auto" controls>
