@@ -3,21 +3,31 @@ html {
   font-size: 16px;
   font-family: "Cabin", sans-serif;
   color: #041E37;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
 h2 {
   font-size: 1.75rem;
   font-weight: bold;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {
@@ -26,9 +36,9 @@ a {
 }
 
 section {
-  padding: 2rem 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 aside {
@@ -37,17 +47,7 @@ aside {
 
 .main_content {
   position: relative;
-  padding-top: 2rem;
-}
-
-.media_container {
-  width: 60%;
-}
-
-.media_container img {
-  display: block;
-  max-height: 35rem;
-  width: 100%;
+  padding-top: 4rem;
 }
 
 .shade {
@@ -56,6 +56,19 @@ aside {
 
 .light {
 background-color: white;
+}
+
+.main {
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header */
@@ -90,13 +103,22 @@ nav li {
 .highlight {
   color: #728CA6;
 }
+
+
 /* Start Here Section */
-.start_here {
-  margin-top: 2rem;
+.banner {
+  display: flex;
+  width: 60%;
+  padding-right: 1.5rem;
 }
 
+.banner img {
+  flex: 1 1 auto;
+  width: 100%;
+  height: auto;
+}
 .banner_text {
-  margin: 1.5rem;
+  max-width: 40%;
 }
 
 .banner_text h1, h2 {
@@ -118,11 +140,24 @@ nav li {
 /* Features Section */
 aside {
   width: 40%;
+}
+
+.border {
   border-left: 1px solid #728CA6;
+  border-bottom: 1px solid #728CA6;
+}
+
+.secondary {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
 }
 
 .supporting {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
 }
 
 .supporting h2 {
@@ -130,16 +165,25 @@ aside {
 }
 
 .supporting p {
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.supporting img {
+  flex: 1 1 auto;
+  width: 100%;
+  height: auto;
 }
 
 .feature_container {
   display: flex;
   padding: 1rem;
   align-items: center;
-  border-bottom: 1px solid #728CA6;
+  transition: background-color 4ms ease-in 5ms;
 }
+
+ .feature_container:hover {
+   background-color: #827FB2;
+ }
 
  .feature_container img {
    width: 35%;
@@ -155,9 +199,8 @@ aside {
    font-size: 1.5rem;
  }
 
- .feature_text span {
+ .feature_text p, span {
    padding-bottom: 0.5rem;
-   line-height: 1.5rem;
  }
 
  .feature_text a {
@@ -170,32 +213,37 @@ aside {
   align-items: center;
 }
 
-.start_learning h2 {
+/*.start_learning h2 {
   padding-bottom: 2rem;
-}
+} */
 
 .courses {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
+  padding: 2rem 3rem;
 }
 
 .course_card {
-  flex: 1 1 18rem;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  height: 25rem;
+  min-height: 25rem;
+  max-height: 50rem;
+  padding: 1rem;
+  max-width: 25rem;
 }
 
 .course_card img {
-  max-width: 20rem;
+  width: 100%;
+  height: auto;
 }
 
 .course_listing {
   background-color: white;
-  padding: 1rem 1rem 1.5rem 1rem;
-  max-width: 18rem;
+  padding: 1rem;
+  height: 10rem;
 }
 
 .course_listing h4 {
@@ -203,38 +251,11 @@ aside {
   padding-bottom: .5rem;
 }
 
-/*#software {
-  background-image: url("../images/course-software.jpg");
-  background-size: contain;
-  width: 20rem;
-  height: auto;
-}
-
-#computer_art{
-  background-image: url("../images/course-computer-art.jpg");
-  background-size: contain;
-}
-
-#design{
-  background-image: url("../images/course-design.jpg");
-  background-size: contain;
-}
-
-#data {
-  background-image: url("../images/course-data.jpg");
-  background-size: contain;
-}
-
-#business {
-  background-image: url("../images/course-business.jpg");
-  background-size: contain;
-}
-
-#marketing {
-  background-image: url("../images/course-marketing.jpg");
-  background-size: contain;
-} */
 /* Thesis Section */
+.supporting video {
+  width: 100%;
+}
+
 /* Footer */
 footer {
   padding: 1rem 1.5rem 2rem 1.5rem;
