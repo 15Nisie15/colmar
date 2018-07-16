@@ -1,8 +1,8 @@
 /* Universal Styles */
 html {
   font-size: 16px;
-  font-family: "Cabin", sans-serif;
-  color: #041E37;
+  font-family: 'Merriweather Sans', 'Helvetica', sans-serif;
+  color: #2A373F;
   box-sizing: border-box;
 }
 
@@ -32,7 +32,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #041E37;
+  color: #2A373F;
+}
+
+nav a:hover {
+  color: #88867D;
 }
 
 section {
@@ -51,11 +55,11 @@ aside {
 }
 
 .shade {
- background-color: #728CA6;
+ background-color: #DCCDB0;
 }
 
 .light {
-background-color: white;
+background-color: #EFEBCE;
 }
 
 .main {
@@ -116,7 +120,7 @@ nav li {
 }
 
 .highlight {
-  color: #728CA6;
+  color: #88867D;
 }
 
 @media only screen and (min-width: 515px) {
@@ -169,15 +173,24 @@ nav li {
 
 .button {
   display: block;
-  background-color: #041E37;
+  background-color: #2A373F;
   margin-left: 0;
   margin-right: 0;
   padding: 0.5rem 0 0.5rem 0;
   text-align: center;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #88867D;
+}
+
+.button a:hover {
+  color: #2A373F;
 }
 
 .button a {
-  color: white;
+  color: #EFEBCE;
 }
 
 @media only screen and (max-width: 515px) {
@@ -207,8 +220,8 @@ nav li {
 }
 /* Features Section */
 .border {
-  border-left: 1px solid #728CA6;
-  border-bottom: 1px solid #728CA6;
+  border-left: 1px solid #88867D;
+  border-bottom: 1px solid #88867D;
 }
 
 .secondary {
@@ -242,17 +255,25 @@ nav li {
   display: flex;
   padding: 1rem;
   align-items: center;
-  transition: background-color 4ms ease-in 5ms;
+  transition: background-color 5ms ease-in 5ms;
 }
 
  .feature_container:hover {
-   background-color: #827FB2;
+   background-color: #D9D2D9;
  }
 
  .feature_container img {
    width: 35%;
    height: auto;
  }
+
+.feature_container:nth-child(3n+0) {
+  background-color: #DCCDB0;
+}
+
+.feature_container:nth-child(3n+0):hover {
+  background-color: #D9D2D9;
+}
 
  .feature_text {
   padding-left: 1rem;
@@ -268,7 +289,11 @@ nav li {
  }
 
  .feature_text a {
-   color: #4A6B8A;
+   color: #88867D;
+ }
+
+ .feature_text a:hover {
+   color: #2A373F;
  }
 
  @media only screen and (min-width: 515px) {
@@ -336,6 +361,11 @@ nav li {
   max-height: 50rem;
   padding: 1rem;
   max-width: 25rem;
+  transition: transform .2s;
+}
+
+.course_card:hover {
+  transform: scale(1.08);
 }
 
 .course_card img {
@@ -344,13 +374,13 @@ nav li {
 }
 
 .course_listing {
-  background-color: white;
+  background-color: #EFEBCE;
   padding: 1rem;
   height: 10rem;
 }
 
 .course_listing a {
-  color: #041E37;
+  color: #2A373F;
 }
 
 .course_listing h4 {
@@ -360,7 +390,8 @@ nav li {
 
  @media only screen and (max-width: 515px) {
    .start_learning {
-     background-color: white;
+     background-color: #EFEBCE;
+     padding-top: 1rem;
    }
 
    .courses {
@@ -382,8 +413,11 @@ nav li {
    }
 
    .course_listing {
-     background-color: #728CA6;
+     background-color: #DCCDB0;
+   }
 
+   .course_listing:active {
+     background-color: #D9D2D9;
    }
 
    .details {
@@ -416,7 +450,7 @@ footer {
   padding: 1rem 1.5rem 2rem 1.5rem;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #728CA6;
+  border-top: 1px solid #88867D;
 }
 
 @media only screen and (max-width: 515px) {
